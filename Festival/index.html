@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Happy Diwali</title>
+	<style>
+		body{
+			background-color: cyan;
+		}
+		.one{
+	float: left;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.two{
+	float: right;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.one {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.two{
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+
+marquee{
+	padding-top: 1%;
+	color: indianred;
+}
+		div{
+			text-align: center;
+			margin-top: 10%;
+			background-color: orange;
+			margin-right: 30%;
+			margin-left: 30%;
+			border-radius: 25px;
+
+		}
+		button{
+			margin-bottom: 10px;
+			padding: 5px;
+			border-radius: 5px;
+		}
+		button:hover{
+			cursor: pointer;
+		}
+		.my{
+			width: 100%;
+			height: 100%;
+		border-radius: 50px;
+		}
+		h4{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<marquee behavior="alternate"><b>🙏सभी हिन्दू भाईयों का स्वागत है🙏</b></marquee>
+	<img src="s1.jpg" class="one">
+    <img src="om1.jpg" class="two">
+	<div>
+		<h1 id="msg">Greet Massage</h1>
+		<button onclick="ms()">Click Here</button>
+	</div>
+
+	<h3 style="text-align: center;">दीयों की रौशनी से झिलमिलाता आँगन हो,
+	पटाकों की गूंजो से आसमान रोशन हो,
+	ऐसी आए झूम के ये दीवाली,
+	हर तरफ ख़ुशियों का मौसम हो…||
+	</h3>
+
+	<img src="my.jpg" class="my">
+	<h4>WELCOME TO ALL</h4>
+
+
+
+	<script>
+		function ms() {
+			let msg="Happy Diwali";
+			let h1Tag = document.getElementById('msg');
+			h1Tag.innerText=msg;
+			h1Tag.style.color="blue";
+		}
+	</script>
+</body>
+</html>
